@@ -1,0 +1,207 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Mar 20 08:43:37 2021
+# Process ID: 28320
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36512
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.xpr
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -include_bit -force -file C:/hdl_projects/ZynqBerryZero_TPG/design_1_wrapper.xsa
+open_bd_design {C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets op_path/clk_wiz_0_clk_out2] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_hblank] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_vblank] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_hsync] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_data_p] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_active_video] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_vsync] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_data_n] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_clk_p] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_clk_n] [get_bd_cells op_path/Video_IO_2_HDMI_TMDS_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.4 op_path/rgb2dvi_0
+endgroup
+set_property location {5 1362 521} [get_bd_cells op_path/rgb2dvi_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_clk_n_0] [get_bd_pins op_path/hdmi_clk_n_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_clk_p_0] [get_bd_pins op_path/hdmi_clk_p_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_data_n_0] [get_bd_pins op_path/hdmi_data_n_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_data_p_0] [get_bd_pins op_path/hdmi_data_p_0]
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/PixelClk] [get_bd_pins op_path/clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/aRst] [get_bd_pins op_path/rst_ps8_0_100M1/peripheral_reset]
+connect_bd_net [get_bd_pins op_path/v_axi4s_vid_out_0/vid_active_video] [get_bd_pins op_path/rgb2dvi_0/vid_pVDE]
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/vid_pData] [get_bd_pins op_path/v_axi4s_vid_out_0/vid_data]
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/vid_pHSync] [get_bd_pins op_path/v_axi4s_vid_out_0/vid_hsync]
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/vid_pVSync] [get_bd_pins op_path/v_axi4s_vid_out_0/vid_vsync]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins op_path/rgb2dvi_0/TMDS]
+endgroup
+startgroup
+set_property -dict [list CONFIG.kClkRange {3} CONFIG.kD0Swap {true} CONFIG.kD1Swap {true} CONFIG.kD2Swap {true} CONFIG.kClkSwap {true}] [get_bd_cells op_path/rgb2dvi_0]
+endgroup
+delete_bd_objs [get_bd_ports HDMI_TXC_N]
+delete_bd_objs [get_bd_ports HDMI_TX_N]
+delete_bd_objs [get_bd_ports HDMI_TX_P]
+set_property name TMDS [get_bd_intf_pins op_path/TMDS_0]
+delete_bd_objs [get_bd_intf_nets op_path_TMDS_0] [get_bd_intf_ports TMDS_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins op_path/TMDS]
+endgroup
+set_property name TMDS [get_bd_intf_ports TMDS_0]
+open_bd_design {C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd}
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.kD0Swap {false} CONFIG.kD1Swap {false} CONFIG.kD2Swap {false} CONFIG.kClkSwap {false}] [get_bd_cells op_path/rgb2dvi_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+generate_target all [get_files  C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/sim_scripts -ip_user_files_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files -ipstatic_source_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/hdl_projects/xilinx_compiled_lib} {questa=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/questa} {riviera=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/riviera} {activehdl=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_ports HDMI_TXC_P]
+generate_target all [get_files  C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+export_ip_user_files -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/sim_scripts -ip_user_files_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files -ipstatic_source_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/hdl_projects/xilinx_compiled_lib} {questa=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/questa} {riviera=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/riviera} {activehdl=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+close_project
+open_project C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.kD2Swap {false}] [get_bd_cells op_path/rgb2dvi_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_rgb2dvi_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.TDATA_REMAP {tdata[23:0]}] [get_bd_cells op_path/axis_subset_converter_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/hdl_projects/ZynqBerryZero/design_1_wrapper.xsa
+archive_project C:/hdl_projects/ZynqBerryZero.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1 -force -exclude_run_results -include_local_ip_cache -include_config_settings
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/mipi_ip/ila_0"}]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7z010_1] 0] [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x1-single}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7z010_1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x1-single}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property CFGMEM_PART {s25fl128s-3.3v-qspi-x2-single} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7z010_1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x2-single}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7z010_1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x2-single}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/Users/aptay/Downloads/TE0727-zbzerodemo1-vivado_2019.2-build_15_20201124064045/zbzerodemo1/prebuilt/software/10_512MB/fsbl_flash.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+endgroup
+close_hw_manager
+archive_project C:/hdl_projects/ZynqBerryZero.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1 -force -exclude_run_results -include_local_ip_cache -include_config_settings
+reset_project
+archive_project C:/hdl_projects/ZynqBerryZero.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1 -force -exclude_run_results -include_local_ip_cache -include_config_settings

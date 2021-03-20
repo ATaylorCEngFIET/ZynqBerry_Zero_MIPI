@@ -1,0 +1,480 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+* Section (5) - CONFIGURATION SETTINGS/FILES
+*  This section summarizes the configuration settings/files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = ZynqBerryZero
+Directory = C:/hdl_projects/ZynqBerryZero
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = 
+
+Section (2) - Excluded Runs
+---------------------------
+The run results were excluded for the following runs in the archived project:-
+
+<synth_1>
+<design_1_ila_0_2_synth_1>
+<design_1_axis_subset_converter_1_6_synth_1>
+<design_1_xbar_6_synth_1>
+<design_1_clk_wiz_1_2_synth_1>
+<design_1_processing_system7_0_0_synth_1>
+<design_1_mipi_csi2_rx_subsyst_0_2_synth_1>
+<design_1_rst_ps8_0_100M1_2_synth_1>
+<design_1_axi_vdma_0_0_synth_1>
+<design_1_rgb2dvi_0_0_synth_1>
+<design_1_v_axi4s_vid_out_0_0_synth_1>
+<design_1_clk_wiz_0_0_synth_1>
+<design_1_rst_ps8_0_100M1_3_synth_1>
+<design_1_v_tc_0_0_synth_1>
+<design_1_xbar_7_synth_1>
+<design_1_v_demosaic_0_2_synth_1>
+<bd_108c_vfb_0_0_synth_1>
+<bd_108c_rx_0_synth_1>
+<impl_1>
+<design_1_ila_0_2_impl_1>
+<design_1_axis_subset_converter_1_6_impl_1>
+<design_1_xbar_6_impl_1>
+<design_1_clk_wiz_1_2_impl_1>
+<design_1_processing_system7_0_0_impl_1>
+<design_1_mipi_csi2_rx_subsyst_0_2_impl_1>
+<design_1_rst_ps8_0_100M1_2_impl_1>
+<design_1_axi_vdma_0_0_impl_1>
+<design_1_rgb2dvi_0_0_impl_1>
+<design_1_v_axi4s_vid_out_0_0_impl_1>
+<design_1_clk_wiz_0_0_impl_1>
+<design_1_rst_ps8_0_100M1_3_impl_1>
+<design_1_v_tc_0_0_impl_1>
+<design_1_xbar_7_impl_1>
+<design_1_v_demosaic_0_2_impl_1>
+<bd_108c_vfb_0_0_impl_1>
+<bd_108c_rx_0_impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<bd_108c_rx_0>
+None
+
+<bd_108c_vfb_0_0>
+None
+
+<design_1_axi_vdma_0_0>
+None
+
+<design_1_axis_subset_converter_1_6>
+None
+
+<design_1_clk_wiz_0_0>
+None
+
+<design_1_clk_wiz_1_2>
+None
+
+<design_1_ila_0_2>
+None
+
+<design_1_mipi_csi2_rx_subsyst_0_2>
+None
+
+<design_1_processing_system7_0_0>
+None
+
+<design_1_rgb2dvi_0_0>
+None
+
+<design_1_rst_ps8_0_100M1_2>
+None
+
+<design_1_rst_ps8_0_100M1_3>
+None
+
+<design_1_v_axi4s_vid_out_0_0>
+None
+
+<design_1_v_demosaic_0_2>
+None
+
+<design_1_v_tc_0_0>
+None
+
+<design_1_xbar_6>
+None
+
+<design_1_xbar_7>
+None
+
+<constrs_1>
+None
+
+<sim_1>
+None
+
+<sources_1>
+None
+
+<utils_1>
+None
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/design_1.bd
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_6/design_1_axi_interconnect_0_6.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_6/design_1_axi_interconnect_0_6.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_1_6/design_1_axis_subset_converter_1_6.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_1_6/design_1_axis_subset_converter_1_6.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_2/design_1_clk_wiz_1_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_2/design_1_clk_wiz_1_2.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/design_1_mipi_csi2_rx_subsyst_0_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/bd_108c.bd
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_0/bd_108c_r_sync_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_0/bd_108c_r_sync_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_1/bd_108c_rx_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_1/bd_108c_rx_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_2/bd_108c_phy_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_2/bd_108c_phy_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/bd_108c_vfb_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/bd_108c_vfb_0_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/design_1_mipi_csi2_rx_subsyst_0_2.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_2/design_1_rst_ps8_0_100M1_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_2/design_1_rst_ps8_0_100M1_2.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_2/design_1_v_demosaic_0_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_v_demosaic_0_2/design_1_v_demosaic_0_2.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_7/design_1_axi_interconnect_0_7.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_7/design_1_axi_interconnect_0_7.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/bd_48ac.bd
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_0/bd_48ac_one_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_0/bd_48ac_one_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_2/bd_48ac_arsw_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_2/bd_48ac_arsw_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_3/bd_48ac_rsw_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_3/bd_48ac_rsw_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_4/bd_48ac_awsw_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_4/bd_48ac_awsw_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_5/bd_48ac_wsw_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_5/bd_48ac_wsw_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_6/bd_48ac_bsw_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_6/bd_48ac_bsw_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_7/bd_48ac_s00mmu_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_7/bd_48ac_s00mmu_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_8/bd_48ac_s00tr_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_8/bd_48ac_s00tr_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_9/bd_48ac_s00sic_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_9/bd_48ac_s00sic_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_10/bd_48ac_s00a2s_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_10/bd_48ac_s00a2s_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_s01mmu_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_s01mmu_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/bd_48ac_s01tr_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/bd_48ac_s01tr_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/bd_48ac_s01sic_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/bd_48ac_s01sic_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/bd_48ac_s01a2s_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/bd_48ac_s01a2s_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_17/bd_48ac_sawn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_17/bd_48ac_sawn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_18/bd_48ac_swn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_18/bd_48ac_swn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_19/bd_48ac_sbn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_19/bd_48ac_sbn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_20/bd_48ac_m00s2a_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_20/bd_48ac_m00s2a_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/bd_48ac_m00arn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/bd_48ac_m00arn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_22/bd_48ac_m00rn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_22/bd_48ac_m00rn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_23/bd_48ac_m00awn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_23/bd_48ac_m00awn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_24/bd_48ac_m00wn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_24/bd_48ac_m00wn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_25/bd_48ac_m00bn_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_25/bd_48ac_m00bn_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/bd_48ac_m00e_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/bd_48ac_m00e_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/sc_post_elab.rld
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/sc_xtlm_design_1_smartconnect_0_0.mem
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.xml
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml
+./ZynqBerryZero.srcs/sources_1/imports/design_1_wrapper.vhd
+
+<constrs_1>
+./ZynqBerryZero.srcs/constrs_1/new/io.xdc
+
+<sim_1>
+None
+
+<utils_1>
+./ZynqBerryZero.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp
+./ZynqBerryZero.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+
+<design_1_ila_0_2>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2.xml
+
+<design_1_axis_subset_converter_1_6>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_1_6/design_1_axis_subset_converter_1_6.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_1_6/design_1_axis_subset_converter_1_6.xml
+
+<design_1_xbar_6>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6.xml
+
+<design_1_clk_wiz_1_2>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_2/design_1_clk_wiz_1_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_2/design_1_clk_wiz_1_2.xml
+
+<design_1_processing_system7_0_0>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xml
+
+<design_1_mipi_csi2_rx_subsyst_0_2>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/design_1_mipi_csi2_rx_subsyst_0_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/bd_108c.bd
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_0/bd_108c_r_sync_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_0/bd_108c_r_sync_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_1/bd_108c_rx_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_1/bd_108c_rx_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_2/bd_108c_phy_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_2/bd_108c_phy_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/bd_108c_vfb_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/bd_108c_vfb_0_0.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/design_1_mipi_csi2_rx_subsyst_0_2.xml
+
+<design_1_rst_ps8_0_100M1_2>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_2/design_1_rst_ps8_0_100M1_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_2/design_1_rst_ps8_0_100M1_2.xml
+
+<design_1_axi_vdma_0_0>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xml
+
+<design_1_rgb2dvi_0_0>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xml
+
+<design_1_v_axi4s_vid_out_0_0>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml
+
+<design_1_clk_wiz_0_0>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml
+
+<design_1_rst_ps8_0_100M1_3>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xml
+
+<design_1_v_tc_0_0>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml
+
+<design_1_xbar_7>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7.xml
+
+<design_1_v_demosaic_0_2>
+./ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_2/design_1_v_demosaic_0_2.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_v_demosaic_0_2/design_1_v_demosaic_0_2.xml
+
+<bd_108c_vfb_0_0>
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/bd_108c_vfb_0_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/ip_0/bd_108c_vfb_0_0_axis_converter.xml
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_3/bd_108c_vfb_0_0.xml
+
+<bd_108c_rx_0>
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_1/bd_108c_rx_0.xci
+./ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_1/bd_108c_rx_0.xml
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+./ZynqBerryZero.ipdefs/digilent/ip/rgb2dvi
+./ZynqBerryZero.ipdefs/digilent/if/tmds_v1_0
+
+<design_1_ila_0_2>
+None
+
+<design_1_axis_subset_converter_1_6>
+None
+
+<design_1_xbar_6>
+None
+
+<design_1_clk_wiz_1_2>
+None
+
+<design_1_processing_system7_0_0>
+None
+
+<design_1_mipi_csi2_rx_subsyst_0_2>
+None
+
+<design_1_rst_ps8_0_100M1_2>
+None
+
+<design_1_axi_vdma_0_0>
+None
+
+<design_1_rgb2dvi_0_0>
+None
+
+<design_1_v_axi4s_vid_out_0_0>
+None
+
+<design_1_clk_wiz_0_0>
+None
+
+<design_1_rst_ps8_0_100M1_3>
+None
+
+<design_1_v_tc_0_0>
+None
+
+<design_1_xbar_7>
+None
+
+<design_1_v_demosaic_0_2>
+None
+
+<bd_108c_vfb_0_0>
+None
+
+<bd_108c_rx_0>
+None
+
+None
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.jou
+Archived Location = ./ZynqBerryZero/vivado.jou
+
+Source File = C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+Archived Location = ./ZynqBerryZero/vivado.log
+
+Section (5) - CONFIGURATION SETTINGS/FILES
+------------------------------------------
+List of configuration settings/files that were added to the archived project:-
+
+

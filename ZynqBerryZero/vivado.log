@@ -1,0 +1,980 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Mar 20 08:43:37 2021
+# Process ID: 28320
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36512
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+235 Beta devices matching pattern found, 108 enabled.
+start_gui
+open_project C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 1261.004 ; gain = 98.996
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -include_bit -force -file C:/hdl_projects/ZynqBerryZero_TPG/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/hdl_projects/ZynqBerryZero_TPG/design_1_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.2/data\embeddedsw) loading 2 seconds
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/hdl_projects/ZynqBerryZero_TPG/design_1_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.715 ; gain = 107.480
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_bd_design {C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /op_path/ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- trenz.biz:user:Video_IO_2_HDMI_TMDS:1.0 - Video_IO_2_HDMI_TMDS_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:v_tpg:8.1 - v_tpg_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Successfully read diagram <design_1> from block design file <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.715 ; gain = 0.000
+delete_bd_objs [get_bd_nets op_path/clk_wiz_0_clk_out2] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_hblank] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_vblank] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_hsync] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_data_p] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_active_video] [get_bd_nets op_path/v_axi4s_vid_out_0_vid_vsync] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_data_n] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_clk_p] [get_bd_nets op_path/Video_IO_2_HDMI_TMDS_0_hdmi_clk_n] [get_bd_cells op_path/Video_IO_2_HDMI_TMDS_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.4 op_path/rgb2dvi_0
+endgroup
+set_property location {5 1362 521} [get_bd_cells op_path/rgb2dvi_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_clk_n_0] [get_bd_pins op_path/hdmi_clk_n_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_clk_p_0] [get_bd_pins op_path/hdmi_clk_p_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_data_n_0] [get_bd_pins op_path/hdmi_data_n_0]
+delete_bd_objs [get_bd_nets op_path_hdmi_data_p_0] [get_bd_pins op_path/hdmi_data_p_0]
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/PixelClk] [get_bd_pins op_path/clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/aRst] [get_bd_pins op_path/rst_ps8_0_100M1/peripheral_reset]
+connect_bd_net [get_bd_pins op_path/v_axi4s_vid_out_0/vid_active_video] [get_bd_pins op_path/rgb2dvi_0/vid_pVDE]
+WARNING: [BD 41-1306] The connection to interface pin </op_path/v_axi4s_vid_out_0/vid_active_video> is being overridden by the user with net <v_axi4s_vid_out_0_vid_active_video>. This pin will not be connected as a part of interface connection <vid_io_out>.
+WARNING: [BD 41-1306] The connection to interface pin </op_path/rgb2dvi_0/vid_pVDE> is being overridden by the user with net <v_axi4s_vid_out_0_vid_active_video>. This pin will not be connected as a part of interface connection <RGB>.
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/vid_pData] [get_bd_pins op_path/v_axi4s_vid_out_0/vid_data]
+WARNING: [BD 41-1306] The connection to interface pin </op_path/rgb2dvi_0/vid_pData> is being overridden by the user with net </op_path/v_axi4s_vid_out_0_vid_data>. This pin will not be connected as a part of interface connection <RGB>.
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/vid_pHSync] [get_bd_pins op_path/v_axi4s_vid_out_0/vid_hsync]
+WARNING: [BD 41-1306] The connection to interface pin </op_path/rgb2dvi_0/vid_pHSync> is being overridden by the user with net <v_axi4s_vid_out_0_vid_hsync>. This pin will not be connected as a part of interface connection <RGB>.
+WARNING: [BD 41-1306] The connection to interface pin </op_path/v_axi4s_vid_out_0/vid_hsync> is being overridden by the user with net <v_axi4s_vid_out_0_vid_hsync>. This pin will not be connected as a part of interface connection <vid_io_out>.
+connect_bd_net [get_bd_pins op_path/rgb2dvi_0/vid_pVSync] [get_bd_pins op_path/v_axi4s_vid_out_0/vid_vsync]
+WARNING: [BD 41-1306] The connection to interface pin </op_path/rgb2dvi_0/vid_pVSync> is being overridden by the user with net <v_axi4s_vid_out_0_vid_vsync>. This pin will not be connected as a part of interface connection <RGB>.
+WARNING: [BD 41-1306] The connection to interface pin </op_path/v_axi4s_vid_out_0/vid_vsync> is being overridden by the user with net <v_axi4s_vid_out_0_vid_vsync>. This pin will not be connected as a part of interface connection <vid_io_out>.
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins op_path/rgb2dvi_0/TMDS]
+endgroup
+startgroup
+set_property -dict [list CONFIG.kClkRange {3} CONFIG.kD0Swap {true} CONFIG.kD1Swap {true} CONFIG.kD2Swap {true} CONFIG.kClkSwap {true}] [get_bd_cells op_path/rgb2dvi_0]
+endgroup
+delete_bd_objs [get_bd_ports HDMI_TXC_N]
+delete_bd_objs [get_bd_ports HDMI_TX_N]
+delete_bd_objs [get_bd_ports HDMI_TX_P]
+set_property name TMDS [get_bd_intf_pins op_path/TMDS_0]
+TMDS
+delete_bd_objs [get_bd_intf_nets op_path_TMDS_0] [get_bd_intf_ports TMDS_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins op_path/TMDS]
+endgroup
+set_property name TMDS [get_bd_intf_ports TMDS_0]
+open_bd_design {C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd}
+save_bd_design
+Wrote  : <C:\hdl_projects\ZynqBerryZero_TPG\ZynqBerryZero_TPG.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+startgroup
+set_property -dict [list CONFIG.kD0Swap {false} CONFIG.kD1Swap {false} CONFIG.kD2Swap {false} CONFIG.kClkSwap {false}] [get_bd_cells op_path/rgb2dvi_0]
+endgroup
+save_bd_design
+Wrote  : <C:\hdl_projects\ZynqBerryZero_TPG\ZynqBerryZero_TPG.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+reset_run synth_1
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns and whs are greater than threshold, current reference dcp will be replaced
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp with file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+CRITICAL WARNING: [BD 41-1344] Reset pin /op_path/v_tc_0/resetn (associated clock /op_path/v_tc_0/clk) is connected to reset source /rst_ps7_0_100M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Instead it should be connected to reset source /op_path/rst_ps8_0_100M1/peripheral_aresetn.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /op_path/rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/op_path/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </op_path/rgb2dvi_0> to completely resolve these warnings.
+Wrote  : <C:\hdl_projects\ZynqBerryZero_TPG\ZynqBerryZero_TPG.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/rgb2dvi_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_rgb2dvi_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 0b100f14e70bd8d3; cache size = 32.312 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 0b100f14e70bd8d3; cache size = 32.312 MB.
+[Sat Mar 20 09:33:57 2021] Launched design_1_rgb2dvi_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_rgb2dvi_0_0_synth_1: C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/design_1_rgb2dvi_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/synth_1/runme.log
+[Sat Mar 20 09:33:57 2021] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1744.840 ; gain = 194.184
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_7/design_1_axi_interconnect_0_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xml. It will be created.
+generate_target all [get_files  C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/sim_scripts -ip_user_files_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files -ipstatic_source_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/hdl_projects/xilinx_compiled_lib} {questa=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/questa} {riviera=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/riviera} {activehdl=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_ports HDMI_TXC_P]
+generate_target all [get_files  C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-1344] Reset pin /op_path/v_tc_0/resetn (associated clock /op_path/v_tc_0/clk) is connected to reset source /rst_ps7_0_100M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Instead it should be connected to reset source /op_path/rst_ps8_0_100M1/peripheral_aresetn.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /op_path/rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/op_path/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </op_path/rgb2dvi_0> to completely resolve these warnings.
+Wrote  : <C:\hdl_projects\ZynqBerryZero_TPG\ZynqBerryZero_TPG.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1801.207 ; gain = 10.801
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 0b100f14e70bd8d3; cache size = 32.629 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 0b100f14e70bd8d3; cache size = 32.629 MB.
+export_ip_user_files -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/sim_scripts -ip_user_files_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files -ipstatic_source_dir C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/hdl_projects/xilinx_compiled_lib} {questa=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/questa} {riviera=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/riviera} {activehdl=C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sat Mar 20 10:24:49 2021] Launched synth_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/synth_1/runme.log
+[Sat Mar 20 10:24:49 2021] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_7/design_1_axi_interconnect_0_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xml. It will be created.
+reset_run synth_1
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns and whs are greater than threshold, current reference dcp will be replaced
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp with file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sat Mar 20 10:34:27 2021] Launched synth_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/synth_1/runme.log
+[Sat Mar 20 10:34:27 2021] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_7/design_1_axi_interconnect_0_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero_TPG/ZynqBerryZero_TPG.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xml. It will be created.
+close_project
+open_project C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1830.762 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /mipi_ip/ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.1 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.1 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <design_1> from block design file <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1881.648 ; gain = 50.887
+startgroup
+set_property -dict [list CONFIG.kD2Swap {false}] [get_bd_cells op_path/rgb2dvi_0]
+endgroup
+save_bd_design
+Wrote  : <C:\hdl_projects\ZynqBerryZero\ZynqBerryZero.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+reset_run synth_1
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns and whs are greater than threshold, current reference dcp will be replaced
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp with file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/synth_1/design_1_wrapper.dcp
+reset_run design_1_rgb2dvi_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1344] Reset pin /op_path/v_tc_0/resetn (associated clock /op_path/v_tc_0/clk) is connected to reset source /mipi_ip/rst_ps8_0_100M1/peripheral_aresetn (synchronous to clock source /mipi_ip/clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Instead it should be connected to reset source /op_path/rst_ps8_0_100M1/peripheral_aresetn.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /mipi_ip/clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /mipi_ip/clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /op_path/rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/op_path/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </op_path/rgb2dvi_0> to completely resolve these warnings.
+Wrote  : <C:\hdl_projects\ZynqBerryZero\ZynqBerryZero.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mipi_ip/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_ip/axis_subset_converter_1/m_axis_tdest'(10) - Only lower order bits will be connected.
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mipi_ip/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_ip/axis_subset_converter_1/m_axis_tdest'(10) - Only lower order bits will be connected.
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+Exporting to file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_2.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_2_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/rgb2dvi_0 .
+Exporting to file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_rgb2dvi_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_smartconnect_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 0b100f14e70bd8d3; cache size = 104.549 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 0b100f14e70bd8d3; cache size = 104.549 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 4f24540e06689af3; cache size = 104.549 MB.
+config_ip_cache: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2059.180 ; gain = 3.836
+[Sat Mar 20 10:44:10 2021] Launched design_1_rgb2dvi_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_rgb2dvi_0_0_synth_1: C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/design_1_rgb2dvi_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/synth_1/runme.log
+[Sat Mar 20 10:44:10 2021] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 2069.965 ; gain = 114.688
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_6/design_1_axi_interconnect_0_6.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_1_6/design_1_axis_subset_converter_1_6.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_2/design_1_clk_wiz_1_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/design_1_mipi_csi2_rx_subsyst_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_2/design_1_rst_ps8_0_100M1_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_2/design_1_v_demosaic_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_7/design_1_axi_interconnect_0_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xml. It will be created.
+startgroup
+set_property -dict [list CONFIG.TDATA_REMAP {tdata[23:0]}] [get_bd_cells op_path/axis_subset_converter_0]
+endgroup
+save_bd_design
+Wrote  : <C:\hdl_projects\ZynqBerryZero\ZynqBerryZero.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+reset_run synth_1
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns and whs are greater than threshold, current reference dcp will be replaced
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp with file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1161] Replacing file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1344] Reset pin /op_path/v_tc_0/resetn (associated clock /op_path/v_tc_0/clk) is connected to reset source /mipi_ip/rst_ps8_0_100M1/peripheral_aresetn (synchronous to clock source /mipi_ip/clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Instead it should be connected to reset source /op_path/rst_ps8_0_100M1/peripheral_aresetn.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /mipi_ip/clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /mipi_ip/clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /op_path/rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/op_path/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </op_path/rgb2dvi_0> to completely resolve these warnings.
+Wrote  : <C:\hdl_projects\ZynqBerryZero\ZynqBerryZero.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mipi_ip/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_ip/axis_subset_converter_1/m_axis_tdest'(10) - Only lower order bits will be connected.
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mipi_ip/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_ip/axis_subset_converter_1/m_axis_tdest'(10) - Only lower order bits will be connected.
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ui/bd_6a74373.ui> 
+Exporting to file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_2.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_2_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_2.hwdef
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/axis_subset_converter_0 .
+Exporting to file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_axis_subset_converter_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_smartconnect_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 0b100f14e70bd8d3; cache size = 104.870 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 0b100f14e70bd8d3; cache size = 104.870 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axis_subset_converter_0_0, cache-ID = e2f646a1cdc5c00c; cache size = 104.870 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 4f24540e06689af3; cache size = 104.870 MB.
+[Sat Mar 20 10:54:11 2021] Launched synth_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/synth_1/runme.log
+[Sat Mar 20 10:54:11 2021] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 2123.656 ; gain = 37.508
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_6/design_1_axi_interconnect_0_6.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_1_6/design_1_axis_subset_converter_1_6.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_2/design_1_clk_wiz_1_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/design_1_mipi_csi2_rx_subsyst_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_2/design_1_rst_ps8_0_100M1_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_2/design_1_v_demosaic_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M1_3/design_1_rst_ps8_0_100M1_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_7/design_1_axi_interconnect_0_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/hdl_projects/ZynqBerryZero/ZynqBerryZero.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xml. It will be created.
+write_hw_platform -fixed -include_bit -force -file C:/hdl_projects/ZynqBerryZero/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/hdl_projects/ZynqBerryZero/design_1_wrapper.xsa ...
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/hdl_projects/ZynqBerryZero/design_1_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2339.383 ; gain = 213.266
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+archive_project C:/hdl_projects/ZynqBerryZero.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1 -force -exclude_run_results -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns and whs are greater than threshold, current reference dcp will be replaced
+INFO: [Project 1-1161] Replacing file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp with file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.runs/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1161] Replacing file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axis_subset_converter_1_6_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_6_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_xbar_6_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_6_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_clk_wiz_1_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_processing_system7_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_mipi_csi2_rx_subsyst_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rst_ps8_0_100M1_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axi_vdma_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rgb2dvi_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rgb2dvi_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_axi4s_vid_out_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_clk_wiz_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rst_ps8_0_100M1_3_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_3_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_tc_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_xbar_7_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_7_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_demosaic_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_108c_vfb_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_vfb_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_108c_rx_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_rx_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_6_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_6_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rgb2dvi_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_3_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_7_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_vfb_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_rx_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_108c_rx_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_108c_rx_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_108c_vfb_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_108c_vfb_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_vdma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_vdma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axis_subset_converter_1_6'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axis_subset_converter_1_6'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_1_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_1_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_mipi_csi2_rx_subsyst_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_mipi_csi2_rx_subsyst_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rgb2dvi_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rgb2dvi_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rst_ps8_0_100M1_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rst_ps8_0_100M1_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rst_ps8_0_100M1_3'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rst_ps8_0_100M1_3'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_demosaic_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_demosaic_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xbar_6'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xbar_6'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xbar_7'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xbar_7'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'utils_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/hdl_projects/ZynqBerryZero.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:47 ; elapsed = 00:02:07 . Memory (MB): peak = 2371.754 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-21:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 2371.754 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3770.734 ; gain = 1398.980
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/mipi_ip/ila_0"}]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7z010_1] 0] [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x1-single}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+WARNING: [Xicom 50-100] The current boot mode is QSPI.
+If flash programming fails, configure device for JTAG boot mode and try again.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.
+ERROR: [Xicom 50-162] Timed out while waiting for uboot prompt.
+Problem in running uboot
+Flash programming initialization failed.
+ERROR: [Labtools 27-3161] Flash Programming Unsuccessful
+program_hw_cfgmem: Time (s): cpu = 00:00:07 ; elapsed = 00:03:18 . Memory (MB): peak = 3859.965 ; gain = 6.293
+INFO: [Common 17-344] 'program_hw_cfgmem' was cancelled
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7z010_1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x1-single}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+WARNING: [Xicom 50-100] The current boot mode is QSPI.
+If flash programming fails, configure device for JTAG boot mode and try again.
+ERROR: [Xicom 50-186] Error while detecting SPI flash device - unrecognized JEDEC id bytes: 00, 00, 00
+Problem in running uboot
+Flash programming initialization failed.
+ERROR: [Labtools 27-3161] Flash Programming Unsuccessful
+ERROR: [Common 17-39] 'program_hw_cfgmem' failed due to earlier errors.
+set_property CFGMEM_PART {s25fl128s-3.3v-qspi-x2-single} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+WARNING: [Xicom 50-100] The current boot mode is QSPI.
+If flash programming fails, configure device for JTAG boot mode and try again.
+ERROR: [Xicom 50-186] Error while detecting SPI flash device - unrecognized JEDEC id bytes: 00, 00, 00
+Problem in running uboot
+Flash programming initialization failed.
+ERROR: [Labtools 27-3161] Flash Programming Unsuccessful
+ERROR: [Common 17-39] 'program_hw_cfgmem' failed due to earlier errors.
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+WARNING: [Xicom 50-100] The current boot mode is QSPI.
+If flash programming fails, configure device for JTAG boot mode and try again.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.
+ERROR: [Xicom 50-162] Timed out while waiting for uboot prompt.
+Problem in running uboot
+Flash programming initialization failed.
+ERROR: [Labtools 27-3161] Flash Programming Unsuccessful
+program_hw_cfgmem: Time (s): cpu = 00:00:13 ; elapsed = 00:10:45 . Memory (MB): peak = 3859.965 ; gain = 0.000
+INFO: [Common 17-344] 'program_hw_cfgmem' was cancelled
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7z010_1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x2-single}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/hdl_projects/ZynqBerryZero/wksp/design_1_wrapper/zynq_fsbl/fsbl.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+WARNING: [Xicom 50-100] The current boot mode is QSPI.
+If flash programming fails, configure device for JTAG boot mode and try again.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.
+ERROR: [Xicom 50-162] Timed out while waiting for uboot prompt.
+Problem in running uboot
+Flash programming initialization failed.
+ERROR: [Labtools 27-3161] Flash Programming Unsuccessful
+program_hw_cfgmem: Time (s): cpu = 00:00:06 ; elapsed = 00:04:35 . Memory (MB): peak = 3859.965 ; gain = 0.000
+INFO: [Common 17-344] 'program_hw_cfgmem' was cancelled
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: localhost:3121
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-21:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 3862.840 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+set_property PROGRAM.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/hdl_projects/ZynqBerryZero/ZynqBerryZero.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7z010_1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x2-single}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.FILES [list "C:/hdl_projects/ZynqBerryZero/wksp/imager_system/_ide/bootimage/BOOT.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ZYNQ_FSBL {C:/Users/aptay/Downloads/TE0727-zbzerodemo1-vivado_2019.2-build_15_20201124064045/zbzerodemo1/prebuilt/software/10_512MB/fsbl_flash.elf} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+startgroup 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+WARNING: [Xicom 50-100] The current boot mode is QSPI.
+If flash programming fails, configure device for JTAG boot mode and try again.
+f probe 0 0 0
+Performing Erase Operation...
+Erase Operation successful.
+INFO: [Xicom 50-44] Elapsed time = 8 sec.
+Performing Program Operation...
+Program Operation successful.
+INFO: [Xicom 50-44] Elapsed time = 13 sec.
+Performing Verify Operation...
+INFO: [Xicom 50-44] Elapsed time = 12 sec.
+Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:00:37 . Memory (MB): peak = 3862.840 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/251633005ECDA
+close_hw_manager
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+archive_project C:/hdl_projects/ZynqBerryZero.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1 -force -exclude_run_results -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns and whs are greater than threshold, current reference dcp will be replaced
+INFO: [Project 1-1161] Replacing file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp with file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.runs/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1161] Replacing file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_/ZynqBerryZero.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axis_subset_converter_1_6_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_6_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_xbar_6_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_6_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_clk_wiz_1_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_processing_system7_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_mipi_csi2_rx_subsyst_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rst_ps8_0_100M1_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axi_vdma_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rgb2dvi_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rgb2dvi_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_axi4s_vid_out_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_clk_wiz_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rst_ps8_0_100M1_3_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_3_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_tc_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_xbar_7_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_7_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_demosaic_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_108c_vfb_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_vfb_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_108c_rx_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_rx_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_6_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_6_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rgb2dvi_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_3_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_7_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_vfb_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_rx_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_108c_rx_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_108c_rx_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_108c_vfb_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_108c_vfb_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_vdma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_vdma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axis_subset_converter_1_6'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axis_subset_converter_1_6'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_1_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_1_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_mipi_csi2_rx_subsyst_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_mipi_csi2_rx_subsyst_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rgb2dvi_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rgb2dvi_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rst_ps8_0_100M1_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rst_ps8_0_100M1_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rst_ps8_0_100M1_3'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rst_ps8_0_100M1_3'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_demosaic_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_demosaic_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xbar_6'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xbar_6'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xbar_7'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xbar_7'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'utils_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/hdl_projects/ZynqBerryZero.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:58 ; elapsed = 00:01:55 . Memory (MB): peak = 3952.555 ; gain = 81.910
+reset_project
+reset_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 3996.145 ; gain = 0.000
+archive_project C:/hdl_projects/ZynqBerryZero.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1 -force -exclude_run_results -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28320-DESKTOP-L3OMJC1/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_6_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_6_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_2_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_2_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_2_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rgb2dvi_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_3_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_7_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_2_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_vfb_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_rx_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_6_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_6_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rgb2dvi_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M1_3_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_7_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_vfb_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_108c_rx_0_impl_1'...

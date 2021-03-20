@@ -1,0 +1,59 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.448214",
+   "Default View_TopLeft":"-538,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1660 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1660 -y 80 -defaultsOSRD
+preplace port TMDS_0_0 -pg 1 -lvl 5 -x 1660 -y 750 -defaultsOSRD
+preplace port CSI_C_N -pg 1 -lvl 0 -x 0 -y 770 -defaultsOSRD
+preplace port CSI_C_P -pg 1 -lvl 0 -x 0 -y 790 -defaultsOSRD
+preplace port CLP_C_N -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
+preplace port CLP_C_P -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
+preplace portBus CSI_D_N -pg 1 -lvl 0 -x 0 -y 850 -defaultsOSRD
+preplace portBus CSI_D_P -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace portBus CLP_D_N -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
+preplace portBus CLP_D_P -pg 1 -lvl 0 -x 0 -y 910 -defaultsOSRD
+preplace portBus const_1 -pg 1 -lvl 5 -x 1660 -y 1040 -defaultsOSRD
+preplace portBus const_2 -pg 1 -lvl 5 -x 1660 -y 1060 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1380 -y 190 -defaultsOSRD
+preplace inst mipi_ip -pg 1 -lvl 1 -x 230 -y 840 -defaultsOSRD
+preplace inst op_path -pg 1 -lvl 4 -x 1380 -y 750 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 230 -y 520 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 2 -x 620 -y 660 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 3 -x 960 -y 630 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1380 -y 1060 -defaultsOSRD
+preplace netloc mipi_ip_AXIS_Stream_clk 1 0 4 40 660 440 810 800 730 1140
+preplace netloc clk_100Mhz_1 1 0 5 30 1010 NJ 1010 820J 780 1150 640 1630
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 40 1020 NJ 1020 NJ 1020 1120 390 1610
+preplace netloc aresetn_axis_1 1 0 4 20 1000 450 800 810 760 NJ
+preplace netloc mipi_phy_if_0_data_hs_n_0_1 1 0 1 NJ 850
+preplace netloc mipi_phy_if_0_data_hs_p_0_1 1 0 1 NJ 870
+preplace netloc mipi_phy_if_0_data_lp_n_0_1 1 0 1 NJ 890
+preplace netloc mipi_phy_if_0_data_lp_p_0_1 1 0 1 NJ 910
+preplace netloc mipi_phy_if_0_clk_hs_n_0_1 1 0 1 NJ 770
+preplace netloc mipi_phy_if_0_clk_hs_p_0_1 1 0 1 NJ 790
+preplace netloc mipi_phy_if_0_clk_lp_n_0_1 1 0 1 NJ 810
+preplace netloc mipi_phy_if_0_clk_lp_p_0_1 1 0 1 NJ 830
+preplace netloc xlconstant_0_dout 1 4 1 1620J 1040n
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 5 40 670 430J 790 NJ 790 1130J 630 1640
+preplace netloc axi_interconnect_0_M01_AXI 1 1 3 NJ 530 NJ 530 1110
+preplace netloc processing_system7_0_DDR 1 4 1 NJ 60
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 2 1 N 600
+preplace netloc smartconnect_0_M00_AXI 1 3 1 1100 170n
+preplace netloc mipi_ip_m_axis_video 1 1 1 420 610n
+preplace netloc processing_system7_0_M_AXI_GP1 1 0 5 20 380 NJ 380 NJ 380 NJ 380 1620
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 2 1 N 620
+preplace netloc axi_interconnect_0_M00_AXI 1 1 1 420 510n
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 2 2 790 720 NJ
+preplace netloc op_path_TMDS_0 1 4 1 NJ 750
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 NJ 80
+levelinfo -pg 1 0 230 620 960 1380 1660
+pagesize -pg 1 -db -bbox -sgen -150 0 1790 1120
+"
+}
+{
+   "da_ps7_cnt":"1"
+}

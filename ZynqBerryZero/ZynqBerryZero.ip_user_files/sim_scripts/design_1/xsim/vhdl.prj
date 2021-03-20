@@ -1,0 +1,21 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_ila_0_2/sim/design_1_ila_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/ip/ip_0/sim/bd_108c_r_sync_0.vhd" \
+"../../../bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/bd_0/sim/bd_108c.vhd" \
+"../../../bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_2/sim/design_1_mipi_csi2_rx_subsyst_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps8_0_100M1_2/sim/design_1_rst_ps8_0_100M1_2.vhd" \
+"../../../../ZynqBerryZero.gen/sources_1/bd/design_1/ipshared/20df/src/ClockGen.vhd" \
+"../../../../ZynqBerryZero.gen/sources_1/bd/design_1/ipshared/20df/src/SyncAsync.vhd" \
+"../../../../ZynqBerryZero.gen/sources_1/bd/design_1/ipshared/20df/src/SyncAsyncReset.vhd" \
+"../../../../ZynqBerryZero.gen/sources_1/bd/design_1/ipshared/20df/src/DVI_Constants.vhd" \
+"../../../../ZynqBerryZero.gen/sources_1/bd/design_1/ipshared/20df/src/OutputSERDES.vhd" \
+"../../../../ZynqBerryZero.gen/sources_1/bd/design_1/ipshared/20df/src/TMDS_Encoder.vhd" \
+"../../../../ZynqBerryZero.gen/sources_1/bd/design_1/ipshared/20df/src/rgb2dvi.vhd" \
+"../../../bd/design_1/ip/design_1_rgb2dvi_0_0/sim/design_1_rgb2dvi_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps8_0_100M1_3/sim/design_1_rst_ps8_0_100M1_3.vhd" \
+"../../../bd/design_1/ip/design_1_v_tc_0_0/sim/design_1_v_tc_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_vdma_0_0/sim/design_1_axi_vdma_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_48ac_psr_aclk_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort
